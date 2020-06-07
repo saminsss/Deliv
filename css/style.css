@@ -920,6 +920,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #history .history-item h4 {
   position: relative;
   display:block;
+  top: 8px;
   left: 16px;
   width: 100%;
   color: #000;
