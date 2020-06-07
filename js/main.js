@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 
     $(document).on('click', '.menu-has-children i', function(e) {
       $(this).next().toggleClass('menu-item-active');
-      $(this).nextAll('ul').eq(0).slideToggle();
+      $(this).nextAll('ul').slideToggle();
       $(this).toggleClass("fa-chevron-up fa-chevron-down");
     });
 
@@ -108,12 +108,12 @@ jQuery(document).ready(function($) {
     }
   });
 
-  // Gallery - uses the magnific popup jQuery plugin
-  $('.gallery-popup').magnificPopup({
+  // History - uses the magnific popup jQuery plugin
+  $('.history-popup').magnificPopup({
     type: 'image',
     removalDelay: 300,
     mainClass: 'mfp-fade',
-    gallery: {
+    history: {
       enabled: true
     },
     zoom: {
@@ -125,7 +125,5 @@ jQuery(document).ready(function($) {
       }
     }
   });
-
-  // custom code
 
 });
