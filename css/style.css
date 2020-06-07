@@ -65,7 +65,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: linear-gradient(45deg, rgba(0,150,30,0.8), rgba(0,105,0,0.9));
+  background: linear-gradient(45deg, rgba(0,150,30,0.8), rgba(0,105,0,0.8));
   color: #fff;
 }
 
@@ -600,23 +600,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #banner {
+  overflow: hidden;
   background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/products/product-3.jpg) fixed center center;
   background-size: cover;
-  padding: 60px 0;
+  padding: 80px 0;
   text-align: center;
-  height: 240px;
 }
 
-#banner .banner-title a{
+#banner .text-center {
   text-align: center;
+}
+
+#banner .cta-title {
   color: #fff;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
 }
 
-#banner .banner-text a{
-  text-align: center;
-  font-size: 22px;
+#banner .cta-text {
   color: #fff;
 }
 
@@ -857,27 +858,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
 }
 
-#history .row {
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  overflow-x:auto;
-  overflow-y:hidden;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-#history .row::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
-}
-
-#history .row::-webkit-scrollbar-thumb {
-  background: grey;
-  border-radius: 10px;
-}
-
 #history .container-fluid {
   padding: 0px;
 }
@@ -908,23 +888,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #history .history-item:hover img {
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #history .history-item:hover .history-overlay {
   opacity: 1;
   background: rgba(0, 0, 0, 0.7);
-}
-
-#history .history-item h4 {
-  position: relative;
-  display:block;
-  top: 8px;
-  left: 16px;
-  width: 100%;
-  color: #000;
-  text-align:left;
 }
 
 /* Contact Section
@@ -1090,7 +1060,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 18px;
     text-align: center;
   }
-  
 }
 
 @media (min-width: 1025px) {
@@ -1140,10 +1109,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 14px;
     text-align: center;
   }
-  
-  #history .history-item h4 {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -1168,8 +1133,5 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
   }
   
-  #history .history-item h4 {
-    font-size: 14px;
-  }
   
 }
