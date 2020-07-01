@@ -1,17 +1,21 @@
 import React from 'react';
 
 function CategoryBar(props) {
-    const childrenComponent = props.children.map(child => {
+    const subtitleComponent = props.subtitle.map((sub, i) => {
         return (
-            <a href={'/#intro'}>{child}</a>
+            <a href={props.subtitlelink[i]}>{sub}</a>
         )
-    })
+    });
+
+    let toggleLink = "#category"+props.categorynumber;
+    let toggleId = "category"+props.categorynumber; 
+
     return (
         <li class="col-lg-3">
-            <a data-toggle="collapse" class="collapsed" href="#category1">{props.parent}<i class="ion-android-remove"></i></a>
-            <div id="category1" class="collapse" data-parent="#category1">
+            <a data-toggle="collapse" class="collapsed" href={toggleLink}>{props.title}<i class="ion-android-remove"></i></a>
+            <div id={toggleId} class="collapse" data-parent={toggleLink}>
                 <p>
-                    {childrenComponent}
+                    {subtitleComponent}
                 </p>
             </div>
         </li>

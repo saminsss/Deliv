@@ -33,7 +33,6 @@ function Contact() {
                                 <i class="ion-ios-telephone-outline"></i>
                                 <p>778-881-9252</p>
                             </div>
-
                         </div>
                     </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import BrowsingHistoryBox from './BrowsingHistoryComponents/BrowsingHistoryBox';
 
 function BrowsingHistory() {
     return (
@@ -12,53 +13,35 @@ function BrowsingHistory() {
 
                 <div class="row no-gutters">
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="history-item wow fadeInUp">
-                            <a href="#">
-                                <img src="img/history/gallery-1.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
+                    <BrowsingHistoryBox
+                        imgUrl="img/history/gallery-1.jpg"
+                        imgLink="/#intro"
+                    />
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="history-item wow fadeInUp">
-                            <a href="#">
-                                <img src="img/history/gallery-2.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
+                    <BrowsingHistoryBox
+                        imgUrl="img/history/gallery-2.jpg"
+                        imgLink="/#intro"
+                    />
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="history-item wow fadeInUp">
-                            <a href="#">
-                                <img src="img/history/gallery-3.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
+                    <BrowsingHistoryBox
+                        imgUrl="img/history/gallery-3.jpg"
+                        imgLink="/#intro"
+                    />
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="history-item wow fadeInUp">
-                            <a href="#">
-                                <img src="img/history/gallery-4.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
+                    <BrowsingHistoryBox
+                        imgUrl="img/history/gallery-4.jpg"
+                        imgLink="/#intro"
+                    />
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="history-item wow fadeInUp">
-                            <a href="#">
-                                <img src="img/history/gallery-5.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
+                    <BrowsingHistoryBox
+                        imgUrl="img/history/gallery-5.jpg"
+                        imgLink="/#intro"
+                    />
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="history-item wow fadeInUp">
-                            <a href="#">
-                                <img src="img/history/gallery-6.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
+                    <BrowsingHistoryBox
+                        imgUrl="img/history/gallery-6.jpg"
+                        imgLink="/#intro"
+                    />
                 </div>
             </div>
         </section>
