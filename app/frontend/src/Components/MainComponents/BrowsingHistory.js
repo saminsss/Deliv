@@ -10,7 +10,6 @@ function BrowsingHistory() {
                     <span class="section-divider"></span>
                     <p class="section-description"><a class="section-description" href="">See All</a></p>
                 </div>
-
                 <div class="row no-gutters">
 
                     <BrowsingHistoryBox

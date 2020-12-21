@@ -9,7 +9,7 @@ body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
-  overflow-x: auto;
+  overflow-x: hidden;
   position: absolute;
 }
 
@@ -124,8 +124,7 @@ h6 {
 #intro {
   width: 100%;
   height: 220px;
-  background: linear-gradient(45deg, rgba(0,180,50,0.8), rgba(0,135,0,0.8)), url("../img/background-intro.jpg") center top no-repeat;
-  background-size: cover;
+  background: linear-gradient(45deg, rgba(0,180,50,0.8), rgba(0,135,0,0.8)), url("../img/background-intro.jpg") center top no-repeat fixed;
   position: relative;
   box-shadow: 0px -4px 19px 4px rgba(0, 0, 0, 0.6);
 }
@@ -550,20 +549,30 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #toolbar {
+  display: relative;
   padding: 10px 0;
   background: #fff;
   overflow: hidden;
+  margin-bottom: -10px;
+}
+
+#toolbar .col-4, .col-sm-auto {
+	padding-bottom: 15px;
 }
 
 #toolbar a{
   color: rgba(0,180,50,0.8);
   max-width: 100%;
   opacity: 0.8;
-  padding: 15px 0;
+  padding: 0px 0;
+  font-size: 14px;
+  border-bottom: 1px solid green;
 }
 
 #toolbar a:hover {
   opacity: 1;
+  font-weight: 500;
+  border-bottom: 2px solid green;
 }
 
 /* Featured Section
@@ -580,6 +589,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
   transition: 0.4s;
+  margin-right: -12px;
+  margin-left: -12px;
+  
 }
 
 
@@ -636,8 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #banner {
   overflow: hidden;
-  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/products/product-3.jpg) fixed center center;
-  background-size: cover;
+  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/products/product-3.jpg) center center;
   padding: 80px 0;
   text-align: center;
 }
@@ -1083,11 +1094,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #1dc8cd;
 }
 
+@media (min-width: 991px){
+  #intro {
+	background-size: cover;
+  }
+  
+  #banner {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 991px) {
   #intro {
     background-attachment: fixed;
   }
-	
+  
   #featured .features-img {
     padding-top: 120px;
     margin-top: -200px;
